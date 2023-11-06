@@ -1,0 +1,275 @@
+/* GENERAL */
+
+body {
+    background: url(http://wallpaperset.com/w/full/d/c/8/516656.jpg) no-repeat;
+    background-size: cover; /* Pour redimensionner l'image pour remplir l'arrière-plan */
+    background-attachment: fixed; /* Pour que l'image reste fixée */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    zoom: 1.2;
+    text-rendering: optimizeSpeed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*HEADER*/
+
+h1, h2{
+    font-family: 'Alumni Sans';
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 1em 2em;
+}
+
+.titres {
+    background-color: #4B93F9;
+    background-image: linear-gradient(to left, #4B93F9, #01127eb0);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
+    border: 2px solid #ffffff;
+}
+
+.nameTitle {
+    width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.jobTitle {
+    font-weight: 500;
+    font-style: italic;
+    width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.imageHeader {
+    width: 200px; 
+    height: 150px;
+    overflow: hidden; 
+    position: relative; 
+    
+}
+
+.photoHeader {
+    width: 100%;
+    position: absolute;
+    border-radius: 10%;
+
+}
+
+/*NAVBAR*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    font-family: 'Roboto Slab';
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0em 4em 0em 4em;
+    margin-bottom: 2em;
+    background-image: linear-gradient(to left, #4B93F9, #01127e);
+    border: 2px solid #ffffff;
+    width: 28em;
+    height: 50px;
+    font-size: 17px;
+}
+
+.nav ul {
+    margin: 1em 0em 1em 0em;
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.nav li {
+
+    align-items: center;
+    padding: 0em 2em 0em 2em; 
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: font-weight 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    
+}
+
+.nav a:hover {
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px #01127e;
+    
+
+}
+
+/* BOXES */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.box {
+    border: 5px #ffffff solid;
+    padding: 1em;
+    width: 300px;
+    height: 375px;
+    flex-wrap: wrap;
+    margin: 2em;
+    background-image: linear-gradient(to top, #4B93F9, #01127e);
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.main h3 {
+    text-align: center;
+    font-family: 'Alumni Sans';
+    font-weight: 500;
+    color: #01127e;
+    font-size: 35px;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
+}
+
+.main p {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.listSkills {
+    margin: 1em 0em 1em 0em;
+    list-style: none; 
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.listSkills li {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    margin-left: 3px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5em;
+}
+
+.listSpirit {
+    margin: 3em 0em 2em 0em;
+    list-style: none; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.listSpirit li {
+    font-size: larger;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+}
+
+.box:hover {
+    transform: scale(1.2); /* Agrandissement */
+}
+
+.box:not(:hover) {
+    transform: scale(1); /* Retour à la taille initiale */
+}
+
+#boxBig {
+    width: 900px;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Alumni Sans';
+    font-size: xx-large;
+    margin: 0em;
+}
+
+.listsBoxBig{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listProjectsDone {
+    margin: 3em 0em 2em 0em;
+    list-style: none; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.listProjectsDone li {
+    font-size: medium;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+}
+
+.listProjectsCurrent {
+    margin: 3em 0em 2em 0em;
+    list-style: none; 
+    display: flex; 
+    flex-direction: column;
+
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.listProjectsCurrent li {
+    font-size: medium;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+}
