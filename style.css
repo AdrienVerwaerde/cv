@@ -32,7 +32,6 @@ h1, h2{
 }
 
 header {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -143,8 +142,8 @@ ul {
 .box {
     border: 5px #ffffff solid;
     padding: 1em;
-    width: 300px;
-    height: 375px;
+    width: 250px;
+    height: 300px;
     flex-wrap: wrap;
     margin: 2em;
     background-image: linear-gradient(to top, #4B93F9, #01127e);
@@ -156,7 +155,7 @@ ul {
     font-family: 'Alumni Sans';
     font-weight: 500;
     color: #01127e;
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
     background-color: #ffffff;
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
@@ -165,6 +164,7 @@ ul {
 .main p {
     font-family: 'Roboto Slab';
     font-weight: 400;
+    font-size: small;
     color: #ffffff;
     text-align: center;
 
@@ -172,6 +172,7 @@ ul {
 
 .listSkills {
     margin: 1em 0em 1em 0em;
+    font-size: small;
     list-style: none; 
     display: flex; 
     flex-direction: column;
@@ -186,11 +187,12 @@ ul {
     align-items: flex-start;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
 }
 
 .listSpirit {
     margin: 3em 0em 2em 0em;
+    font-size: small;
     list-style: none; 
     display: flex; 
     flex-direction: column;
@@ -210,6 +212,8 @@ ul {
 
 .box:hover {
     transform: scale(1.1); /* Agrandissement */
+    background-image: none;
+    background-color: #01127e;
 }
 
 .box:not(:hover) {
@@ -217,13 +221,16 @@ ul {
 }
 
 #boxBig {
-    width: 100%;
-    align-items: center;
+    width: 50%;
+    height: 25%;
     text-align: center;
+    align-self: flex-end;
 }
 
 #boxBig:hover {
     transform: none;
+    background-image: linear-gradient(to top, #4B93F9, #01127e);
+
 }
 
 
@@ -240,7 +247,7 @@ h4 {
 }
 
 .listProjectsDone {
-    margin: 3em 0em 2em 0em;
+    margin: 1em 0em 2em 0em;
     list-style: none; 
     display: flex; 
     flex-direction: column;
@@ -259,7 +266,7 @@ h4 {
 }
 
 .listProjectsCurrent {
-    margin: 3em 0em 2em 0em;
+    margin: 1em 0em 2em 0em;
     list-style: none; 
     display: flex; 
     flex-direction: column;
