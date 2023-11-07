@@ -8,7 +8,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    zoom: 1.2;
     text-rendering: optimizeSpeed;
     display: flex;
     flex-direction: column;
@@ -210,7 +209,7 @@ ul {
 }
 
 .box:hover {
-    transform: scale(1.2); /* Agrandissement */
+    transform: scale(1.1); /* Agrandissement */
 }
 
 .box:not(:hover) {
@@ -218,10 +217,15 @@ ul {
 }
 
 #boxBig {
-    width: 900px;
+    width: 100%;
     align-items: center;
     text-align: center;
 }
+
+#boxBig:hover {
+    transform: none;
+}
+
 
 h4 {
     font-family: 'Alumni Sans';
