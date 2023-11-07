@@ -222,17 +222,30 @@ ul {
     transform: scale(1); /* Retour à la taille initiale */
 }
 
+
+/*BOX PROJETS*/
+
 #boxBig {
-    width: 50%;
-    height: 25%;
+    width: 600px;
+    height: 225px;
     text-align: center;
-    align-self: flex-end;
+    align-self: center;
 }
 
 #boxBig:hover {
-    transform: none;
     background-image: linear-gradient(to top, #4B93F9, #01127e);
+    transform: scale(1); 
+}
 
+#boxBig h3 {
+    text-align: center;
+    font-family: 'Alumni Sans';
+    font-weight: 500;
+    color: #01127e;
+    font-size: 30px;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
 }
 
 
@@ -244,8 +257,8 @@ h4 {
 
 .listsBoxBig{
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
-    align-items: center;
 }
 
 .listProjectsDone {
@@ -254,11 +267,11 @@ h4 {
     display: flex; 
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: #ffffff;
-
 }
 
-.listProjectsDone li {
+.listProjectsDone li, .listProjectsCurrent li {
     font-size: medium;
     font-family: 'Roboto Slab';
     font-weight: 400;
@@ -272,44 +285,21 @@ h4 {
     list-style: none; 
     display: flex; 
     flex-direction: column;
-
     align-items: center;
     color: #ffffff;
 
 }
 
-.listProjectsCurrent li {
-    font-size: medium;
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 0.5em;
-}
-
-.listProjectsDone a{
+.listProjectsDone a, .listProjectsCurrent a {
 
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: font-weight 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        
+
 }
-    
-.listProjectsDone a:hover {
+
+.listProjectsDone a:hover, .listProjectsCurrent a:hover {
     font-weight: bolder;
     text-shadow: 5px 5px 10px #01127e;
 }
 
-
-.listProjectsCurrent a{
-
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: font-weight 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-        
-}
-    
-.listProjectsCurrent a:hover {
-    font-weight: bolder;
-    text-shadow: 5px 5px 10px #01127e;
-}
