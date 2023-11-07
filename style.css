@@ -146,6 +146,7 @@ ul {
     height: 300px;
     flex-wrap: wrap;
     margin: 2em;
+    font-size: 1em;
     background-image: linear-gradient(to top, #4B93F9, #01127e);
     transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -161,13 +162,14 @@ ul {
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.743);
 }
 
-.main p {
+#parcours {
     font-family: 'Roboto Slab';
     font-weight: 400;
-    font-size: small;
+    font-size: 0.8em;
     color: #ffffff;
     text-align: center;
-
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 .listSkills {
@@ -187,7 +189,7 @@ ul {
     align-items: flex-start;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 .listSpirit {
@@ -283,4 +285,31 @@ h4 {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 0.5em;
+}
+
+.listProjectsDone a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: font-weight 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        
+}
+    
+.listProjectsDone a:hover {
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px #01127e;
+}
+
+
+.listProjectsCurrent a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: font-weight 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), text-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        
+}
+    
+.listProjectsCurrent a:hover {
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px #01127e;
 }
