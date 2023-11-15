@@ -53,8 +53,8 @@ header {
 
 #languageButtons img {
     cursor: pointer;
-    width: 40px;
-    height: 38px;
+    width: 30px;
+    height: 28px;
 }
 
 
@@ -284,12 +284,25 @@ h4 {
 
 .listProjectsDone {
     margin: 1em 0em 2em 0em;
-    list-style: none; 
-    display: flex; 
+    list-style: none;  
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+}
+
+.listProjectsCurrent {
+    margin: 1em 0em 2em 0em;
+    list-style: none; 
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+ul.listProjectsDone, ul.listProjectsCurrent {
+    width: 100%;
+
 }
 
 .listProjectsDone li, .listProjectsCurrent li {
@@ -299,16 +312,6 @@ h4 {
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 0.5em;
-}
-
-.listProjectsCurrent {
-    margin: 1em 0em 2em 0em;
-    list-style: none; 
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-
 }
 
 .listProjectsDone a, .listProjectsCurrent a {
